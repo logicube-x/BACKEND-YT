@@ -7,3 +7,5 @@ async function connectDB(){
 
       console.log('Connected to database');
 } 
+
+module.exports=connectDB;
