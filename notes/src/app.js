@@ -11,18 +11,8 @@ description:""
 }
  */
 
-app.post("/notes", async(req,res)=>{
-    const data=req.body;
 
-  await noteModel.create({
-    title:data.title,
-    description:data.description
-  })
+  
 
-  res.status(201).json({
-    message:'note created successfully'
-  })
-
-})
 
 module.exports = app;
